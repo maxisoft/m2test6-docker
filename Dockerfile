@@ -8,7 +8,7 @@ RUN apt-get -y install curl
 RUN apt-get -y install net-tools --no-install-recommends
 
 
-RUN curl -o xampp-linux-installer.run "https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/5.6.15/xampp-linux-x64-5.6.15-1-installer.run?from_af=true" && \
+RUN curl -o xampp-linux-installer.run "https://downloadsapachefriends.global.ssl.fastly.net/xampp-files/5.6.8/xampp-linux-x64-5.6.8-0-installer.run?from_af=true" && \
  chmod +x xampp-linux-installer.run && \
  bash -c './xampp-linux-installer.run' && \
  ln -sf /opt/lampp/lampp /usr/bin/lampp && \
