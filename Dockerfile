@@ -62,4 +62,8 @@ do \n\
 done \n\
 /usr/bin/supervisord -n" > /startup.sh
 
+ENV MYSQL_DB_HOST localhost
+ENV MYSQL_DB_USERNAME root
+ENV MYSQL_DB_PASSWORD ""
+
 CMD ["sh", "/startup.sh"]
